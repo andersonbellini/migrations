@@ -1,61 +1,61 @@
 # migrations
 Referência: https://docs.microsoft.com/pt-br/ef/core/managing-schemas/migrations/
 
-PowerShell
+# PowerShell
 Add-Migration InitialCreate
 
-Console:
+# Console:
 dotnet ef migrations add InitialCreate
 
 
 
-PowerShell
+# PowerShell
 Update-Database
 
-Console
+# Console
 dotnet ef database update
 
 
 
-PowerShell
+# PowerShell
 Add-Migration AddProductReviews
 
-Console
+# Console
 dotnet ef migrations add AddProductReviews
 
 
 
-PowerShell
+# PowerShell
 Update-Database
 
-Console
+# Console
 dotnet ef database update
 
 
 
-PowerShell
+# PowerShell
 Remove-Migration
 
-Console
+# Console
 dotnet ef migrations remove
 
 
 
-PowerShell
+# PowerShell
 Update-Database LastGoodMigration
 
-Console
+# Console
 dotnet ef database update LastGoodMigration
 
 
 
-PowerShell
+# PowerShell
 Script-Migration
 
-Console
+# Console
 dotnet ef migrations script
 
 
 
-Como executar em runtime:
+# Como executar em runtime:
 myDbContext.Database.Migrate();
